@@ -3,21 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javascript Quiz</title>
+    <title>High Scores</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/styles.css">
 </head>
-
 <body>
-    <div class="containerHome">
-        <div id="home" class="flex-column flex-center">
-            <h1>Are you Ready?</h1>
-            <a href="./pages/quiz.html" class="btn">Play</a>
-            <a href="./pages/highscores.html" id="highscore-btn" class="btn">High Scores<i class="fas fa-crown"></i></a>
+    <div class="container">
+        <div id="highScores" class="flex-center flex-column">
+            <h1 id="finalScore">Leaderboard</h1>
+            <ul id="highScoresList"></ul>
+            <a href="../index.html" class="btn">Go Home<i class="fas fa-home"></i></a>
         </div>
     </div>
+    <script src="highscores.js"></script>
 </body>
-<script src="./assets/js/quiz.js"></script>
 </html>
-
-<!-- <script src="timer.js" text="text/javascript"></script> -->
