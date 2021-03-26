@@ -6,12 +6,20 @@ const progressBarFull = document.querySelector('#progressBarFull');
 
 
 let currentQuestion = {}
-let acceptingAnswers = false
-let score = 75
+let acceptingAnswers = true
+let score = 0
 let questionCounter = 0
 let availableQuestions = []
 
 let questions = [
+{
+    question: 'What is 2 + 2?',
+    choice1: '2',
+    choice2: '4',
+    choice3: '21',
+    choice4: '17',
+    answer: 2,
+},
 {
     question: 'Commonly used javascript data types DO NOT include...',
     choice1: 'strings',
@@ -43,7 +51,7 @@ const MAX_QUESTIONS = 3
 
 function startGame () {
     questionCounter = 0;
-    score = 75;
+    score = 0;
     availableQuesions = [...questions];
     getNewQuestion();
 };
@@ -52,7 +60,7 @@ getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score)
 
-        return window.location.assign('./endquiz.html')
+        return window.location.assign('../pages/endquiz.html')
     }
 
     questionCounter++
@@ -102,4 +110,4 @@ incrementScore = num => {
     scoreText.innerText = score
 }
 
-// startGame()
+startGame()
