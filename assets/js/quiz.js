@@ -1,10 +1,13 @@
 const question = document.querySelector('#question');
 const choices = Array.from(document.querySelectorAll('.choice-text'));
+const progressText = document.querySelector('#progressText');
 const scoreText = document.querySelector('#score');
+const progressBarFull = document.querySelector('#progressBarFull');
+
 
 let currentQuestion = {}
-let acceptingAnswers = true
-let score = 0
+let acceptingAnswers = false
+let score = 75
 let questionCounter = 0
 let availableQuestions = []
 
@@ -35,20 +38,21 @@ let questions = [
 }
 ];
 
+const SCORE_POINTS = 100
+const MAX_QUESTIONS = 3
 
 function startGame () {
     questionCounter = 0;
     score = 75;
     availableQuesions = [...questions];
     getNewQuestion();
-    countDown();
 };
 
 getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score)
 
-        return window.location.assign('./highschore.html')
+        return window.location.assign('./endquiz.html')
     }
 
     questionCounter++
@@ -97,3 +101,5 @@ incrementScore = num => {
     score +=num
     scoreText.innerText = score
 }
+
+// startGame()
