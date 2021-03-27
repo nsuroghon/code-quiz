@@ -14,7 +14,7 @@
 Test your Javascript knowledge with a quick quiz!
 
 ## Visit
-[Visit Application Here](https://nsuroghon.github.io/Employee-Directory/)
+[Visit Application Here](https://nsuroghon.github.io/code-quiz/)
 
 ## Preview
 ![Preview](https://github.com/nsuroghon/code-quiz/blob/main/Screen%20Shot%202021-03-25%20at%2010.57.15%20PM.png)
