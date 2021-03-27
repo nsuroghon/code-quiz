@@ -11,6 +11,7 @@
 
 ## Description
 
+Test your Javascript knowledge with a quick quiz!
 
 ## Visit
 [Visit Application Here](https://nsuroghon.github.io/Employee-Directory/)
