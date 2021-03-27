@@ -17,7 +17,7 @@ Test your Javascript knowledge with a quick quiz!
 [Visit Application Here](https://nsuroghon.github.io/Employee-Directory/)
 
 ## Preview
-![Preview](https://github.com/nsuroghon/Employee-Directory/blob/main/Screen%20Shot%202021-03-24%20at%2010.14.19%20AM.png)
+![Preview](https://github.com/nsuroghon/code-quiz/blob/main/Screen%20Shot%202021-03-25%20at%2010.57.15%20PM.png)
 
 ## License
 MIT License.
